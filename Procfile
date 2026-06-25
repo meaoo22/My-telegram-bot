@@ -1,1 +1,1 @@
-worker: python codefortelgmbot.py
+worker: python main.py
