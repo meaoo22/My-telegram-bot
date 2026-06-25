@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
 # ====== YAHAN APNA TOKEN AUR ADMIN ID DAALEIN ======
-BOT_TOKEN = "8889794883:AAG3hexs1Ulyslro6oNoAjd1WTnKFb4LDeE"
-ADMIN_CHAT_ID = 6423085445  # 👈 Apna Telegram User ID (integer) yahan daalein
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+ADMIN_CHAT_ID = int(os.environ.get("ADMIN_CHAT_ID", "0"))
 
 # Logging setup
 logging.basicConfig(
